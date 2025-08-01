@@ -1,0 +1,31 @@
+/* 로고 이미지 크기 조절 */
+#logo {
+    height: 100px;
+    width: 130px;
+}
+
+/* 모바일 화면에서 검색창 너비 조정 */
+@media (max-width: 768px) {
+    .ms-auto {
+        width: 100%;
+        margin-top: 1rem;
+    }
+}
+
+/* 테이블 셀 기본 스타일 */
+.table th,
+.table td {
+    text-align: center; /* 텍스트 중앙 정렬 */
+    vertical-align: middle; /* 세로 중앙 정렬 */
+}
+
+/* 주말 날짜(2번째 열)를 제외한 모든 열에 줄바꿈 방지 적용 */
+.table th:not(:nth-child(2)),
+.table td:not(:nth-child(2)) {
+    white-space: nowrap;
+}
+
+/* 검색 결과의 첫 번째 행을 분홍색으로 설정 */
+#resultsBody tr:first-child {
+    background-color: #FFC0CB; /* 분홍색 */
+}

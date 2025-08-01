@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>대구ME 발표팀 검색</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <header class="d-flex align-items-center pb-3 mb-4 border-bottom">
+                        <a href="index.html" class="d-flex align-items-center text-dark text-decoration-none">
+                <img src="logo.png" alt="대구ME 로고" id="logo">
+            </a>
+            <span class="fs-4 ms-2">대구ME 발표팀 검색</span>
+            <div class="ms-auto col-lg-4 col-md-6 col-sm-8">
+                <input type="text" id="searchInput" class="form-control" placeholder="이름을 입력하세요...">
+            </div>
+            <button id="searchButton" class="btn btn-primary ms-2">검색</button>
+        </header>
+
+        <main id="resultsContainer" style="display: none;">
+            <table class="table table-striped table-bordered">
+                <thead>
+                    <tr>
+                        <th>주말 차수</th>
+                        <th>주말 날짜</th>
+                        <th>발표 사제</th>
+                        <th>성사 부부</th>
+                        <th>사회 부부</th>
+                        <th>자신 부부</th>
+                    </tr>
+                </thead>
+                <tbody id="resultsBody">
+                    <!-- 검색 결과가 여기에 동적으로 추가됩니다. -->
+                </tbody>
+            </table>
+            <p id="noResults" class="text-center mt-4" style="display: none;">검색 결과가 없습니다.</p>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
