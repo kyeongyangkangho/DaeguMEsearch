@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 사용자가 제공한 '웹에 게시' URL
         // CORS 문제를 우회하기 위해 프록시 서버를 사용합니다.
-    const SPREADSHEET_URL = `https://api.allorigins.win/raw?url=${encodeURIComponent('https://docs.google.com/spreadsheets/d/e/2PACX-1vRNr0RnGh79jDD-rrZUMpG-PRrJ4fTDqMxQe_L2DT9Gxnhhastnek5ZSbyqevfyg7804W4tgqZe395W/pub?gid=908772313&single=true&output=csv')}`;
+    const SPREADSHEET_URL = `https://api.allorigins.win/raw?url=${encodeURIComponent('https://docs.google.com/spreadsheets/d/e/2PACX-1vRsbSBEIpAUVChiBI6qs14orYM2fUiRoarUzeYlml765V1sfEEJSt2hl-aiQoJCeJw6Sjg3LQwf2p56/pub?gid=995165758&single=true&output=csv')}`;
 
     searchButton.addEventListener('click', performSearch);
     searchInput.addEventListener('keyup', (event) => {
